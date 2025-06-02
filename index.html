@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Returns Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 flex justify-around items-center h-screen">
+    <div class="bg-white rounded-xl max-w-5xl max-h-5xl border-2 border-white">
+      <div class="text-center font-bold text-5xl px-4 py-5">
+        Compound Interest Calculator
+      </div>
+      <div class="flex justify-between">
+        <div class="">
+          <div class="text-bold text-4xl ml-10 mt-5">Capital</div>
+          <input id="c"
+            class="ml-10 text-2xl mt-2 rounded-lg border-gray-400 border-2 pl-2 focus:border-black outline-none"
+            type="number"
+            placeholder="Enter capital"
+          />
+          <div class="text-bold text-4xl ml-10 mt-5">Years</div>
+          <input id="y"
+            class="ml-10 text-2xl mt-2 rounded-lg border-gray-400 border-2 pl-2 focus:border-black outline-none"
+            type="number"
+            placeholder="Enter years"
+          />
+          <div class="text-bold text-4xl ml-10 mt-5">Interest(%)</div>
+          <input id="i"
+            class="ml-10 text-2xl mt-2 rounded-lg border-gray-400 border-2 pl-2 focus:border-black outline-none"
+            type="number"
+            placeholder="Enter interest rate"
+          />
+        </div>
+        <div>
+          <div class="text-4xl mt-10 mr-10">Total Amount</div>
+          <div id="am"
+            class="rounded-lg border-gray-400 border-2 pl-2 text-2xl mr-10"
+          >
+            0.00
+          </div>
+          <div class="text-4xl mt-10">Interest</div>
+          <div id="fi"
+            class="rounded-lg border-gray-400 border-2 pl-2 text-2xl mr-10"
+          >
+            0.00
+          </div>
+        </div>
+      </div>
+      <div id="calc"
+        class="mb-5 mx-auto mt-5 text-4xl text-center bg-blue-600 text-white hover:bg-black rounded-2xl border-blue-600 w-fit px-60 py-2"
+      >
+        Calculate
+      </div>
+    </div>
+    <script src="/dist/main.js"></script>
+  </body>
+</html>
